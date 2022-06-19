@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .me-pic {
   position: relative;
-  top: 100px;
+  top: 200px;
   left: 1400px;
   margin: 0;
   padding: 0;
@@ -9,11 +14,43 @@
 .me-section {
   width: 100%;
   height: 750px;
-  background-color: rgb(16, 15, 90);
+  background-color: #212529;
   position: absolute;
   margin: 0;
   padding: 0;
+  border: none;
+}
+
+.topnav {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgb(47, 135, 218);
   top: 0;
-  left: 0;
-  right: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.topnav li {
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  list-style: none;
+  margin: 25px 50px;
+  text-align: center;
+  margin: 15px;
+}
+
+#active,.topnav li:hover {
+  background-color: rgb(102, 176, 250);
+  color: white;
+}
+
+.layer {
+  position: absolute;
+  left: 150px;
 }
