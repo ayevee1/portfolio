@@ -10,19 +10,15 @@
 <body>
    <div class="me-section">
       <ul class="topnav">
-         <li id="active">Home</li>
-         <li>About</li>
-         <li>Resume</li>
-         <li>Other</li>
+         <a id="active" href="Home.html">Home</a>
+         <a href="/About.html">About</a>
+         <a href="/Resume.html">Resume</a>
+         <a href="Other.html">Other</a>
       </ul>
-      <img src="images/person" alt="my image" class="me-pic">
-      <img src="images/html.png" data-speed="5" alt="html" class="layer">
-      <img src="images/css.png" data-speed="2" alt="css" class="layer">
-      <img src="images/js.png" data-speed="-4" alt="js" class="layer">
-      <img src="images/python.png" data-speed="3" alt="python" class="layer">
-      <img src="images/java.png" data-speed="-3" alt="java" class="layer">
-
+      <img src="images/person" alt="my image" data-speed="-1" class="me-pic">
+      
    </div>
+   <header class="projects-header">test</header>
    
       
 </body>
@@ -30,13 +26,14 @@
 <script type="text/javascript">
    document.addEventListener("mousemove", parallax);
    function parallax(e) {
-      this.querySelectorAll('.layer').forEach(layer => {
+      this.querySelectorAll('.me-pic').forEach(layer => {
          const speed = layer.getAttribute('data-speed')
 
          const x = (window.innerWidth - e.pageX*speed)/100
          const y = (window.innerHeight - e.pageY*speed)/100
 
          layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+
       })
    }
 </script>
